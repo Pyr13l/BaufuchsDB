@@ -194,6 +194,7 @@ class ModelList implements Iterator {
 
     public function execute() {
         $query = $this->_buildQuery();
+        var_dump($query);
         $this->selectString($query);
     }
 

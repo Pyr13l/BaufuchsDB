@@ -7,6 +7,16 @@ class BaseControl {
             'addEmployee' => true,
             'updateEmployee' => true,
         ),
+        'device' => array(
+            'getDevices' => true,
+            'getEmployeeDevices' => true,
+        ),
+        'hardware' => array(
+            'getDeviceHardware' => true,
+        ),
+        'hardware_attributes' => array(
+            'getHardwareAttributes' => true,
+        ),
     );
 
     public function start() {
