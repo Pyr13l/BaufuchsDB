@@ -26,7 +26,7 @@ class Database {
     }
 
     public function connect () {
-        self::$connection = new PDO($this->server_driver . ':host=' . $this->server_hostname . ';dbname=' . $this->server_database, $this->server_username, $this->server_password);
+        self::$connection = new PDO($this->server_driver . ':host=' . $this->server_hostname . ';dbname=' . $this->server_database . ';charset=utf8', $this->server_username, $this->server_password);
     }
 
     public static function getDB ($mode = PDO::FETCH_ASSOC) {

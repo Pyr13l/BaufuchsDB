@@ -13,6 +13,8 @@ class dbObject {
         $this->connection   = $connection;
         $this->mode         = $mode;
         $this->prefix       = $prefix;
+
+        $this->execute('SET NAMES \'utf8\'');
     }
 
     public function execute ($sql, $vars = array()) {
